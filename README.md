@@ -1,5 +1,11 @@
 # edds_ex2
 
+To run the analytics local you have to provide the Kuai dataset under
+data/KuaiRec/
+and the MIND dataset under
+data/mind/
+
+        
 ### ChatGPT description of impression log in the context of web analytics:
 
 In the context of web analytics, an impression log refers to a record or log that tracks when and how often a specific content item (such as an advertisement, video, banner, or any media asset) is shown to a user on a website or in an app.
