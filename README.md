@@ -5,6 +5,8 @@ data/KuaiRec/
 and the MIND dataset under
 data/mind/
 
+Github of authors: https://github.com/Alice1998/TaFR
+
         
 ### ChatGPT description of impression log in the context of web analytics:
 
