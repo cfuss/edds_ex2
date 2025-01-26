@@ -965,3 +965,31 @@ INFO:root:
  train              | 1                   
 ===========================================
 INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-26 19:23:59 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3.0                
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai                
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         |                     
+ load               | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 0                   
+ prediction_dataset | kwai_0412           
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 24                  
+ train              | 0                   
+===========================================
+INFO:root:GPU available: False
