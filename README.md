@@ -1,12 +1,18 @@
 # edds_ex2
 
+## Repository Structure:
+*   data: contains both datasets (KuaiRec and mind)
+*   reports: reports, presentations for the exercise as well as the original paper
+*   playground: contains basic jupyternotebooks to analyze the datasets
+*   study: contains the original work of the authors. Based on this we try to reproduce the paper 
+
 To run the analytics local you have to provide the Kuai dataset under
 data/KuaiRec/
 and the MIND dataset under
 data/mind/
 
 Github of authors: https://github.com/Alice1998/TaFR
-
+Overleaf project for our reports: https://www.overleaf.com/project/676f24b0d572a2bccfaaecce
         
 ### ChatGPT description of impression log in the context of web analytics:
 

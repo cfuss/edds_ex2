@@ -5,12 +5,12 @@ Description copied from https://github.com/msnews/msnews.github.io/blob/master/a
 
 Both the training and validation data are a zip-compressed folder, which contains four different files:
 
-File Name | Description
-------------- | -------------
-behaviors.tsv  | The click histories and impression logs of users
-news.tsv  | The information of news articles
-entity_embedding.vec    | The embeddings of entities in news extracted from knowledge graph
-relation_embedding.vec    | The embeddings of relations between entities extracted from knowledge graph
+| File Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| behaviors.tsv          | The click histories and impression logs of users                            |
+| news.tsv               | The information of news articles                                            |
+| entity_embedding.vec   | The embeddings of entities in news extracted from knowledge graph           |
+| relation_embedding.vec | The embeddings of relations between entities extracted from knowledge graph |
 
 ### behaviors.tsv
 
@@ -26,14 +26,14 @@ have been shuffled.
 
 An example is shown in the table below:
 
-Column | Content
-------------- | -------------
-Impression ID | 91
-User ID | U397059
-Time | 11/15/2019 10:22:32 AM
-History | N106403 N71977 N97080 N102132 N97212 N121652
-Impressions | N129416-0 N26703-1 N120089-1 N53018-0 N89764-0 N91737-0 N29160-0
- 
+| Column        | Content                                                          |
+|---------------|------------------------------------------------------------------|
+| Impression ID | 91                                                               |
+| User ID       | U397059                                                          |
+| Time          | 11/15/2019 10:22:32 AM                                           |
+| History       | N106403 N71977 N97080 N102132 N97212 N121652                     |
+| Impressions   | N129416-0 N26703-1 N120089-1 N53018-0 N89764-0 N91737-0 N29160-0 |
+
 ### news.tsv
 
 The docs.tsv file contains the detailed information of news articles involved in the behaviors.tsv file.
@@ -52,26 +52,27 @@ The full content body of MSN news articles are not made available for download, 
 
 An example is shown in the following table:
 
-Column | Content
-------------- | -------------
-News ID | N37378
-Category | sports
-SubCategory | golf
-Title | PGA Tour winners
-Abstract | A gallery of recent winners on the PGA Tour.
-URL | https://www.msn.com/en-us/sports/golf/pga-tour-winners/ss-AAjnQjj?ocid=chopendata
-Title Entities | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [0], "SurfaceForms": ["PGA Tour"]}]	
-Abstract Entites | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [35], "SurfaceForms": ["PGA Tour"]}]
+| Column           | Content                                                                                                                                   |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| News ID          | N37378                                                                                                                                    |
+| Category         | sports                                                                                                                                    |
+| SubCategory      | golf                                                                                                                                      |
+| Title            | PGA Tour winners                                                                                                                          |
+| Abstract         | A gallery of recent winners on the PGA Tour.                                                                                              |
+| URL              | https://www.msn.com/en-us/sports/golf/pga-tour-winners/ss-AAjnQjj?ocid=chopendata                                                         |
+| Title Entities   | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [0], "SurfaceForms": ["PGA Tour"]}]	 |
+| Abstract Entites | [{"Label": "PGA Tour", "Type": "O", "WikidataId": "Q910409", "Confidence": 1.0, "OccurrenceOffsets": [35], "SurfaceForms": ["PGA Tour"]}] |
 
 The descriptions of the dictionary keys in the "Entities" column are listed as follows:
-Keys | Description
-------------- | -------------
-Label | The entity name in the Wikidata knwoledge graph
-Type | The type of this entity in Wikidata
-WikidataId | The entity ID in Wikidata
-Confidence | The confidence of entity linking
-OccurrenceOffsets | The character-level entity offset in the text of title or abstract
-SurfaceForms | The raw entity names in the original text
+
+| Keys              | Description                                                        |
+|-------------------|--------------------------------------------------------------------|
+| Label             | The entity name in the Wikidata knwoledge graph                    |
+| Type              | The type of this entity in Wikidata                                |
+| WikidataId        | The entity ID in Wikidata                                          |
+| Confidence        | The confidence of entity linking                                   |
+| OccurrenceOffsets | The character-level entity offset in the text of title or abstract |
+| SurfaceForms      | The raw entity names in the original text                          |
 
 
  
@@ -81,8 +82,9 @@ The entity_embedding.vec and relation_embedding.vec files contain the 100-dimens
 In both files, the first column is the ID of entity/relation, and the other columns are the embedding vector values.
 We hope this data can facilitate the research of knowledge-aware news recommendation.
 An example is shown as follows:
-ID | Embedding Values
-------------- | -------------
-Q42306013 | 0.014516	-0.106958	0.024590	...	-0.080382
+
+| ID        | Embedding Values                          |
+|-----------|-------------------------------------------|
+| Q42306013 | 0.014516	-0.106958	0.024590	...	-0.080382 |
 
 Due to some reasons in learning embedding from the subgraph, a few entities may not have embeddings in the entity_embedding.vec file.
