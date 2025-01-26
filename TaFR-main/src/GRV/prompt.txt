@@ -25,7 +25,7 @@ class Label:
         parser.add_argument('--exposed_duration',type=int,default=0)
         return parser
 
-      
+
     def __init__(self,args,corpus): #dataLoader
         self.agg_hour=args.agg_hour
         self.end_time=args.end_time
@@ -52,7 +52,7 @@ class Label:
         #     self.prepareDied(corpus)
 
         return
-    
+
     def read_all(self,args):
         dataFolder=args.path+args.dataset
         df=pd.DataFrame()
@@ -95,17 +95,16 @@ class Label:
             return pd.DataFrame((1 + np.lexsort((g[second_label].rank(), \
             g['click_rate'].rank())))/len(g), \
             index=g.index)
-        print(hourInfo.columns)
+        # print(hourInfo.columns)
         hourInfo=hourInfo.sample(frac=1)
-        risk_rank = hourInfo.groupby(['timelevel']).apply(getRank).reset_index(level=0, drop=True)
-        hourInfo['riskRank'] = risk_rank
+        hourInfo['riskRank']=hourInfo.groupby(['timelevel']).apply(getRank)
         print(hourInfo['riskRank'].describe())
 
         def getFlag(v,t):
             if t<corpus.start_time:
                 return 0
             return v-self.EXP_hazard+self.noEXP_hazard #min(v-self.EXP_hazard,0) #
-        
+
         hourInfo['riskFlag']=hourInfo.apply(lambda v:getFlag(v['riskRank'],v['timelevel']),axis=1)
         logging.info(hourInfo['riskFlag'].describe())
         # hourInfo.sort_values(['photo_id','timelevel'],inplace=True)
@@ -142,8 +141,10 @@ class Label:
         remain=remain.groupby('photo_id').tail(1)
 
         item=pd.concat([remain,died])
-        print(os.getcwd())
-        item.to_csv(r'C:\DS\repos\TaFR\src\GRV\label\kwai__1__24__168__0.5__0.5__-3.0.csv',index=False)
+        item.to_csv(self.label_path,index=False)
         logging.info(item.describe())
 
         return
+
+
+based on this how should the _10F_167H_hourLog.csv look like?

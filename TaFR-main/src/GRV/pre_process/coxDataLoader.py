@@ -12,7 +12,7 @@ import os
 
 class coxDataLoader:
     def parse_data_args(parser):
-        parser.add_argument('--path', type=str, default='../../../data/KuaiRec 2.0/',
+        parser.add_argument('--path', type=str, default='../data/',
                             help='Input data dir.')
         parser.add_argument('--dataset', type=str, default='kwai_1115',
                             help='Choose a dataset.')
@@ -72,6 +72,7 @@ class coxDataLoader:
                 caredList.append('play_rate%d'%(i))
             if self.pctr:
                 caredList.append('new_pctr%d'%(i))
+        print(df_train)
         df_train=df_train[caredList[2:]] 
         df_train=pd.merge(df_train,self.diedInfo[['photo_id','died','timelevel']],on='photo_id')
         logging.info('[coxDataLoader] before died filter %d items'%len(df_train))
