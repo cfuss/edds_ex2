@@ -2,9 +2,9 @@
 
 ## Repository Structure:
 *   data: contains both datasets (KuaiRec and mind)
-*   reports: reports, presentations for the exercise as well as the original paper
+*   documents: reports, presentations for the exercise as well as the original paper
 *   playground: contains basic jupyternotebooks to analyze the datasets
-*   study: contains the original work of the authors. Based on this we try to reproduce the paper 
+*   TaFR-main: contains the original work of the authors. Based on this we try to reproduce the paper 
 
 To run the analytics local you have to provide the Kuai dataset under
 data/KuaiRec/
