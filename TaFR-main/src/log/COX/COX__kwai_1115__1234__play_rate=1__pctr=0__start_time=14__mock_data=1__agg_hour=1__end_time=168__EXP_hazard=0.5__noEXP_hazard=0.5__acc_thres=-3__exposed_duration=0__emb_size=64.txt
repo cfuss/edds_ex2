@@ -1,5 +1,5 @@
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 15:36:21 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:52:42 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -15,140 +15,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
- noEXP_hazard       | 0.5                 
- pctr               | 0                   
- play_rate          | 1                   
- prediction_dataset |                     
- prediction_path    | ../prediction/COX...
- prepareLabel       | 0                   
- random_seed        | 1234                
- start_time         | 14                  
- train              | 0                   
-===========================================
-INFO:root:GPU available: False
-INFO:root:[coxDataLoader] before died filter 3 items
-INFO:root:       died  timelevel
-count   3.0        3.0
-mean    1.0       30.0
-std     0.0        0.0
-min     1.0       30.0
-25%     1.0       30.0
-50%     1.0       30.0
-75%     1.0       30.0
-max     1.0       30.0
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.004998 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.003007 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.001998 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.002001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.002001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.003004 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.002 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.001997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.002 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.002001 secs
-INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 15:40:29 ---------------------------------------------
-INFO:root:
-===========================================
- Arguments          | Values               
-===========================================
- EXP_hazard         | 0.5                 
- acc_thres          | -3                  
- agg_hour           | 1                   
- analysis           | 0                   
- dataset            | kwai_1115           
- emb_size           | 64                  
- end_time           | 168                 
- exposed_duration   | 0                   
- gpu                | 0                   
- label_path         | ../GRV/label        
- load               | 1                   
- noEXP_hazard       | 0.5                 
- pctr               | 0                   
- play_rate          | 1                   
- prediction_dataset |                     
- prediction_path    | ../prediction/COX...
- prepareLabel       | 0                   
- random_seed        | 1234                
- start_time         | 14                  
- train              | 0                   
-===========================================
-INFO:root:GPU available: False
-INFO:root:[coxDataLoader] before died filter 3 items
-INFO:root:       died  timelevel
-count   3.0        3.0
-mean    1.0       30.0
-std     0.0        0.0
-min     1.0       30.0
-25%     1.0       30.0
-50%     1.0       30.0
-75%     1.0       30.0
-max     1.0       30.0
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.002997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.003997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.003995 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.001998 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.002002 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.003 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.00199 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.001997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.001997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.001996 secs
-INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 15:41:12 ---------------------------------------------
-INFO:root:
-===========================================
- Arguments          | Values               
-===========================================
- EXP_hazard         | 0.5                 
- acc_thres          | -3                  
- agg_hour           | 1                   
- analysis           | 0                   
- dataset            | kwai_1115           
- emb_size           | 64                  
- end_time           | 168                 
- exposed_duration   | 0                   
- gpu                | 0                   
- label_path         | ../GRV/label        
- load               | 1                   
- noEXP_hazard       | 0.5                 
- pctr               | 0                   
- play_rate          | 1                   
- prediction_dataset |                     
- prediction_path    | ../prediction/COX...
- prepareLabel       | 0                   
- random_seed        | 1234                
- start_time         | 14                  
- train              | 0                   
-===========================================
-INFO:root:GPU available: False
-INFO:root:[coxDataLoader] before died filter 3 items
-INFO:root:       died  timelevel
-count   3.0        3.0
-mean    1.0       30.0
-std     0.0        0.0
-min     1.0       30.0
-25%     1.0       30.0
-50%     1.0       30.0
-75%     1.0       30.0
-max     1.0       30.0
-INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 15:43:38 ---------------------------------------------
-INFO:root:
-===========================================
- Arguments          | Values               
-===========================================
- EXP_hazard         | 0.5                 
- acc_thres          | -3                  
- agg_hour           | 1                   
- analysis           | 0                   
- dataset            | kwai_1115           
- emb_size           | 64                  
- end_time           | 168                 
- exposed_duration   | 0                   
- gpu                | 0                   
- label_path         | ../GRV/label        
- load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -161,7 +28,7 @@ INFO:root:
 ===========================================
 INFO:root:GPU available: False
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 15:46:43 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:55:47 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -177,6 +44,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -189,7 +57,7 @@ INFO:root:
 ===========================================
 INFO:root:GPU available: False
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 17:55:35 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:56:46 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -205,6 +73,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -217,7 +86,7 @@ INFO:root:
 ===========================================
 INFO:root:GPU available: False
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:12:17 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:02:34 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -233,6 +102,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -244,28 +114,8 @@ INFO:root:
  train              | 0                   
 ===========================================
 INFO:root:GPU available: False
-INFO:root:[coxDataLoader] before died filter 3 items
-INFO:root:       died  timelevel
-count   3.0        3.0
-mean    1.0       30.0
-std     0.0        0.0
-min     1.0       30.0
-25%     1.0       30.0
-50%     1.0       30.0
-75%     1.0       30.0
-max     1.0       30.0
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.007001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.002996 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.002012 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.005001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.001991 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.001992 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.003011 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.002993 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.001991 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.00199 secs
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:13:19 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:06:13 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -281,54 +131,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
- noEXP_hazard       | 0.5                 
- pctr               | 0                   
- play_rate          | 1                   
- prediction_dataset |                     
- prediction_path    | ../prediction/COX...
- prepareLabel       | 0                   
- random_seed        | 1234                
- start_time         | 14                  
- train              | 0                   
-===========================================
-INFO:root:GPU available: False
-INFO:root:[coxDataLoader] before died filter 3 items
-INFO:root:       died  timelevel
-count   3.0        3.0
-mean    1.0       30.0
-std     0.0        0.0
-min     1.0       30.0
-25%     1.0       30.0
-50%     1.0       30.0
-75%     1.0       30.0
-max     1.0       30.0
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.01048 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.001004 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.000998 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.000998 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.002007 secs
-INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:28:07 ---------------------------------------------
-INFO:root:
-===========================================
- Arguments          | Values               
-===========================================
- EXP_hazard         | 0.5                 
- acc_thres          | -3                  
- agg_hour           | 1                   
- analysis           | 0                   
- dataset            | kwai_1115           
- emb_size           | 64                  
- end_time           | 168                 
- exposed_duration   | 0                   
- gpu                | 0                   
- label_path         | ../GRV/label        
- load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -341,27 +144,8 @@ INFO:root:
 ===========================================
 INFO:root:GPU available: False
 INFO:root:[coxDataLoader] before died filter 15 items
-INFO:root:       died  timelevel
-count   8.0   8.000000
-mean    1.0  45.000000
-std     0.0  16.035675
-min     1.0  30.000000
-25%     1.0  30.000000
-50%     1.0  45.000000
-75%     1.0  60.000000
-max     1.0  60.000000
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.026996 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.000996 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.001997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.001 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.001009 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.000997 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.001007 secs
-INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.002004 secs
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:31:39 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:08:27 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -377,6 +161,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -399,7 +184,7 @@ min     1.0  30.000000
 75%     1.0  60.000000
 max     1.0  60.000000
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:34:03 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:14:22 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -415,6 +200,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -426,8 +212,18 @@ INFO:root:
  train              | 0                   
 ===========================================
 INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000
 INFO:root:Namespace(model_name='COX')
-INFO:root:--------------------------------------------- BEGIN: 2025-01-28 18:40:39 ---------------------------------------------
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:17:21 ---------------------------------------------
 INFO:root:
 ===========================================
  Arguments          | Values               
@@ -443,6 +239,7 @@ INFO:root:
  gpu                | 0                   
  label_path         | ../GRV/label        
  load               | 1                   
+ mock_data          | 1                   
  noEXP_hazard       | 0.5                 
  pctr               | 0                   
  play_rate          | 1                   
@@ -454,3 +251,52 @@ INFO:root:
  train              | 0                   
 ===========================================
 INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 19:23:02 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 1                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 0                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000

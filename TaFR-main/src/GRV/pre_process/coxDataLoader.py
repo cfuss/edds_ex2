@@ -2,6 +2,7 @@
 import logging
 import argparse
 import pandas as pd
+import numpy as np
 
 from sklearn.preprocessing import StandardScaler
 from sklearn_pandas import DataFrameMapper
@@ -26,6 +27,8 @@ class coxDataLoader:
                             help='in_features')
         parser.add_argument('--start_time', type=int, default=14,
                             help='group hour')
+        parser.add_argument('--mock_data', type=int, default=1,
+                            help='generate mock data for development')
         return parser
 
 
@@ -47,6 +50,7 @@ class coxDataLoader:
         self.pctr=args.pctr
         self.start_time=args.start_time
         self.prediction_dataset=args.prediction_dataset
+        self.mock_data = args.mock_data
         return
 
     def filtered_data(self):
@@ -59,11 +63,35 @@ class coxDataLoader:
                 caredList.append('new_pctr%d'%(i))
         self.coxData=self.coxData[caredList]
 
+    def get_mock_data(self, rows=15, seed=1234) -> pd.DataFrame:
+        np.random.seed(seed)
+
+        data = []
+
+        for photo_id in range(1, rows + 1):
+            ctr = np.round(np.random.uniform(0.04, 0.30, rows), 2)
+            exp = np.random.randint(60, 211, rows)
+            play_rate = np.round(np.random.uniform(0.30, 0.80, rows), 2)
+            new_pctr = np.round(ctr * np.random.uniform(1.5, 2.5), 2)
+
+            row = [photo_id, *ctr, *exp, *play_rate, *new_pctr]
+            data.append(row)
+
+        columns = ["photo_id"] + \
+                  [f"click_rate{i}" for i in range(1, rows + 1)] + \
+                  [f"exp{i}" for i in range(1, rows + 1)] + \
+                  [f"play_rate{i}" for i in range(1, rows + 1)] + \
+                  [f"new_pctr{i}" for i in range(1, rows + 1)]
+
+        return pd.DataFrame(data, columns=columns)
 
     def load_data(self,args):
         # self.filtered_data()
         self.diedInfo=pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
-        df_train=self.coxData
+        if self.mock_data < 0:
+            df_train=self.coxData
+        else:
+            df_train = self.get_mock_data()
         df_train.fillna(-1,inplace=True)
         caredList=['died','timelevel','photo_id']
         for i in range(self.start_time):
@@ -104,7 +132,6 @@ class coxDataLoader:
             # df_test=pd.merge(coxData,diedInfo[['photo_id','died','timelevel']],on='photo_id')
             # print("length!!!",len(diedInfo),len(coxData),len(df_test))
 
-        
         return df_train,df_val,df_test,caredList
 
 
