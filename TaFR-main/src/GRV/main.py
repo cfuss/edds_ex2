@@ -29,9 +29,9 @@ def parse_global_args(parser):
                         help='Logging file path')
     parser.add_argument('--verbose', type=int, default=logging.INFO,
                         help='Logging Level, 0, 10, ..., 50')
-    parser.add_argument('--load', type=int, default=0,
+    parser.add_argument('--load', type=int, default=1,
                             help='load trained model or not')
-    parser.add_argument('--train', type=int, default=1,
+    parser.add_argument('--train', type=int, default=0,
                             help='To train the model or not.')
     parser.add_argument('--analysis', type=int, default=0,
                             help='analysis prediction results')

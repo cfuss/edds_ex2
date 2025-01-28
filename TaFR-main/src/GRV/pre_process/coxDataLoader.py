@@ -12,7 +12,7 @@ import os
 
 class coxDataLoader:
     def parse_data_args(parser):
-        parser.add_argument('--path', type=str, default='../data/',
+        parser.add_argument('--path', type=str, default='../GRV/data/',
                             help='Input data dir.')
         parser.add_argument('--dataset', type=str, default='kwai_1115',
                             help='Choose a dataset.')
@@ -24,7 +24,7 @@ class coxDataLoader:
                             help='in_features')
         parser.add_argument('--pctr', type=int, default=0,
                             help='in_features')
-        parser.add_argument('--start_time', type=int, default=24,
+        parser.add_argument('--start_time', type=int, default=14,
                             help='group hour')
         return parser
 
@@ -62,7 +62,7 @@ class coxDataLoader:
 
     def load_data(self,args):
         # self.filtered_data()
-        self.diedInfo=pd.read_csv(args.label_path)
+        self.diedInfo=pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
         df_train=self.coxData
         df_train.fillna(-1,inplace=True)
         caredList=['died','timelevel','photo_id']
@@ -72,8 +72,8 @@ class coxDataLoader:
                 caredList.append('play_rate%d'%(i))
             if self.pctr:
                 caredList.append('new_pctr%d'%(i))
-        print(df_train)
-        df_train=df_train[caredList[2:]] 
+        #df_train=df_train.drop([])
+        self.diedInfo['photo_id'] = self.diedInfo['photo_id'].astype(int)
         df_train=pd.merge(df_train,self.diedInfo[['photo_id','died','timelevel']],on='photo_id')
         logging.info('[coxDataLoader] before died filter %d items'%len(df_train))
         df_train=df_train[df_train['died']==1]

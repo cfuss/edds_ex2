@@ -8,7 +8,7 @@ import os
 
 class Label:
     def parse_data_args(parser):
-        parser.add_argument('--label_path', type=str, default='',
+        parser.add_argument('--label_path', type=str, default='../GRV/label',
                             help='died info csv file')
         parser.add_argument('--agg_hour', type=int, default=1,
                             help='group hour')
@@ -45,7 +45,6 @@ class Label:
                 else:
                     args.label_path = '../label/{}.csv'.format(log_file_name)
         self.label_path=args.label_path
-        print("label path",self.label_path)
         if not os.path.exists(self.label_path) or self.prepareLabel:
             self.prepareDied(args,corpus)
         # else:
@@ -56,7 +55,7 @@ class Label:
     def read_all(self,args):
         dataFolder=args.path+args.dataset
         df=pd.DataFrame()
-        if args.dataset=='kwai':
+        if args.dataset=='kwai_1115':
             df=pd.read_csv('%s/%s_10F_167H_hourLog.csv'%(dataFolder,args.dataset[5:]))
             df.rename({"expose_hour":'timelevel','is_click':'click_rate','new_pctr':'pctr'},axis=1,inplace=True)
         elif args.dataset=='MIND':
