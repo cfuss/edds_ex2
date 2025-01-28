@@ -108,11 +108,11 @@ class COX:
         return
     
     def evaluate(self):
-        self.surv.iloc[:, 10:20].plot()
-        plt.ylabel('S(t | x)')
-        _ = plt.xlabel('Time')
-        plt.savefig(self.prediction_path+"_v0.png")
-        plt.close()
+        # self.surv.iloc[:, 10:20].plot()
+        # plt.ylabel('S(t | x)')
+        # _ = plt.xlabel('Time')
+        # plt.savefig(self.prediction_path+"_v0.png")
+        # plt.close()
 
         ev = EvalSurv(self.surv, self.corpus.durations_test, self.corpus.events_test, censor_surv='km')
         logging.info('ev.concordance_td: %f'%ev.concordance_td())

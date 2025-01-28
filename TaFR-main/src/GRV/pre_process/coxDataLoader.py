@@ -78,10 +78,10 @@ class coxDataLoader:
             data.append(row)
 
         columns = ["photo_id"] + \
-                  [f"click_rate{i}" for i in range(1, rows + 1)] + \
-                  [f"exp{i}" for i in range(1, rows + 1)] + \
-                  [f"play_rate{i}" for i in range(1, rows + 1)] + \
-                  [f"new_pctr{i}" for i in range(1, rows + 1)]
+                  [f"click_rate{i}" for i in range(0, rows)] + \
+                  [f"exp{i}" for i in range(0, rows)] + \
+                  [f"play_rate{i}" for i in range(0, rows)] + \
+                  [f"new_pctr{i}" for i in range(0, rows)]
 
         return pd.DataFrame(data, columns=columns)
 
