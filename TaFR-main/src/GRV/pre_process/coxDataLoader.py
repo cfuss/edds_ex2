@@ -85,8 +85,32 @@ class coxDataLoader:
 
         return pd.DataFrame(data, columns=columns)
 
+    def get_kwai_data_to_cox(self):
+        df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
+
+        df['click_rate'] = df['like_cnt'] / df['show_cnt']
+        df['exp'] = df['show_cnt']
+        df['play_rate'] = df['play_cnt'] / df['show_cnt']
+        df['new_pctr'] = df['click_rate'] * np.random.uniform(1.5, 2.5, size=len(df))
+
+        df = df[['video_id', 'click_rate', 'exp', 'play_rate', 'new_pctr']]
+
+        df['metric_row'] = df.groupby('video_id').cumcount() + 1
+
+        df_pivot = df.pivot_table(index='video_id',
+                                  columns='metric_row',
+                                  values=['click_rate', 'exp', 'play_rate', 'new_pctr'],
+                                  aggfunc='first')
+
+        df_pivot.columns = [f'{metric}_{i}' for metric, i in df_pivot.columns]
+
+        df_pivot.reset_index(inplace=True)
+
+        return df
+
     def load_data(self,args):
         # self.filtered_data()
+        df = self.get_kwai_data_to_cox()
         self.diedInfo=pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
         if self.mock_data < 0:
             df_train=self.coxData

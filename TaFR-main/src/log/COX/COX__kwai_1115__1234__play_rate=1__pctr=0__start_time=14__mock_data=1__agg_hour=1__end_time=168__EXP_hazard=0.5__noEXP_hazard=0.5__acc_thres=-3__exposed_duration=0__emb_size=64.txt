@@ -1156,3 +1156,552 @@ INFO:root:<model.COX.COX object at 0x000002696C1B5C40>
 INFO:root:ev.concordance_td: 0.500000
 INFO:root:
 --------------------------------------------- END: 2025-01-28 19:56:19 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:01:11 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.001992 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.000997 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.001006 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.001009 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.000992 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.001008 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.00099 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.000995 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.001011 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.00099 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001BEB279CEF0>
+INFO:root:ev.concordance_td: 0.500000
+INFO:root:
+--------------------------------------------- END: 2025-01-28 20:01:29 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:12:43 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.006976 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.003996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.004094 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.004007 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.004001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.004011 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.003911 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.003993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.002898 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.003012 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.004995 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.004993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.004001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.004014 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.003993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.007006 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.005006 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.005096 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.003993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.003992 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.004005 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.004003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.005003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.004997 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.003993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.005008 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.002998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.002997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.001999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.001002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.000993 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.001996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.000992 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.000935 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.001009 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.00098 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.000979 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.002009 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.000995 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.002986 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.001997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.000993 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.001002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.00099 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.001011 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.000993 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.001999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.001999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.002005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.00101 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.002002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.001013 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.001019 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001005 secs
+INFO:root:<model.COX.COX object at 0x000001DD80EB94F0>
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:13:55 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:15:46 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:20:05 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:26:56 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:29:13 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:32:40 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 15 items
+INFO:root:       died  timelevel
+count   8.0   8.000000
+mean    1.0  45.000000
+std     0.0  16.035675
+min     1.0  30.000000
+25%     1.0  30.000000
+50%     1.0  45.000000
+75%     1.0  60.000000
+max     1.0  60.000000
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.008891 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.002988 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.003002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.003996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.004994 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.004 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.005001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.005009 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.002986 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.00399 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.002982 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.006993 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.006012 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.005999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.005986 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.004987 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.005002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0061 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.006003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.003996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.003998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.006996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.004003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.002996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.005002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.005001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.004 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.007003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.001894 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.002006 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.001002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.000991 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.001008 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.001006 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.002003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.001998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.001996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.001029 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.000994 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.000986 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.000987 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.00099 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.001007 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.000993 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.000994 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.001002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.002009 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.000969 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.000993 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.002005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.001995 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.001992 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.001986 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.001998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.002004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001999 secs
+INFO:root:<model.COX.COX object at 0x000002167351A630>
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-01-28 20:33:55 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 0                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 1                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
