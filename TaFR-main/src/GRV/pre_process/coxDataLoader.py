@@ -89,7 +89,7 @@ class coxDataLoader:
 
     @staticmethod
     def get_kwai_data_to_cox():
-        df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
+        df = pd.read_csv(r"/Users/cfuss/dev/uni/EXDDS/edds_ex2/data/KuaiRec/KuaiRec 2.0/data/item_daily_features.csv")
 
         df['click_rate'] = df['like_cnt'] / df['show_cnt']
         df['exp'] = df['show_cnt']
@@ -111,6 +111,7 @@ class coxDataLoader:
     @staticmethod
     def get_died_info_data_from_kwai():
         df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
+        # df = pd.read_csv(r"/Users/cfuss/dev/uni/EXDDS/edds_ex2/data/KuaiRec/KuaiRec 2.0/data/item_daily_features.csv")
         df["photo_id"] = df["video_id"]
         df["timelevel"] = df["date"]
         df["tag"] = df["video_tag_id"].astype(str)
@@ -134,7 +135,8 @@ class coxDataLoader:
 
     def load_data(self,args):
         # self.filtered_data()
-        self.diedInfo=pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
+        self.diedInfo = pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
+        # self.diedInfo = pd.read_csv(args.label_path + '/kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
         if self.mock_data == 0:
             df_train = self.get_kwai_data_to_cox()
             self.diedInfo = self.get_died_info_data_from_kwai()
@@ -197,7 +199,11 @@ class coxDataLoader:
         df_train.fillna(-1, inplace=True)
         self.x_train = x_mapper.fit_transform(df_train).astype('float32')
         if len(df_val)>0:
+            df_val.replace([np.inf, -np.inf], np.nan, inplace=True)
+            df_val.fillna(-1, inplace=True)
             x_val = x_mapper.transform(df_val).astype('float32')
+        df_test.replace([np.inf, -np.inf], np.nan, inplace=True)
+        df_test.fillna(-1, inplace=True)
         self.x_test = x_mapper.transform(df_test).astype('float32')
         self.df_test=df_test
 
