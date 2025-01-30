@@ -3,3 +3,5 @@
 *.pyc
 venv
 .idea
+/src/log/COX
+/src/prediction/COX

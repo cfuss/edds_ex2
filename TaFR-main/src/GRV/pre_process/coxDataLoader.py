@@ -27,7 +27,7 @@ class coxDataLoader:
                             help='in_features')
         parser.add_argument('--start_time', type=int, default=14,
                             help='group hour')
-        parser.add_argument('--mock_data', type=int, default=1,
+        parser.add_argument('--mock_data', type=int, default=0,
                             help='generate mock data for development')
         return parser
 
@@ -35,6 +35,7 @@ class coxDataLoader:
 
     def __init__(self, args):
         dataFolder=args.path+args.dataset
+        print(os.path.abspath(dataFolder))
         self.coxData=pd.read_csv("%s/cox.csv"%dataFolder)
         renameDict={'item_id':'photo_id'}
         for i in range(168):
@@ -63,7 +64,8 @@ class coxDataLoader:
                 caredList.append('new_pctr%d'%(i))
         self.coxData=self.coxData[caredList]
 
-    def get_mock_data(self, rows=15, seed=1234) -> pd.DataFrame:
+    @staticmethod
+    def get_mock_data(rows=15, seed=1234) -> pd.DataFrame:
         np.random.seed(seed)
 
         data = []
@@ -85,35 +87,56 @@ class coxDataLoader:
 
         return pd.DataFrame(data, columns=columns)
 
-    def get_kwai_data_to_cox(self):
+    @staticmethod
+    def get_kwai_data_to_cox():
         df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
 
         df['click_rate'] = df['like_cnt'] / df['show_cnt']
         df['exp'] = df['show_cnt']
         df['play_rate'] = df['play_cnt'] / df['show_cnt']
         df['new_pctr'] = df['click_rate'] * np.random.uniform(1.5, 2.5, size=len(df))
-
         df = df[['video_id', 'click_rate', 'exp', 'play_rate', 'new_pctr']]
 
-        df['metric_row'] = df.groupby('video_id').cumcount() + 1
+        df["index"] = df.groupby("video_id").cumcount()
+        df = df.pivot(index="video_id", columns="index").reset_index()
+        df.columns = [f"{col[0]}{col[1]}" if col[1] else col[0] for col in df.columns]
 
-        df_pivot = df.pivot_table(index='video_id',
-                                  columns='metric_row',
-                                  values=['click_rate', 'exp', 'play_rate', 'new_pctr'],
-                                  aggfunc='first')
-
-        df_pivot.columns = [f'{metric}_{i}' for metric, i in df_pivot.columns]
-
-        df_pivot.reset_index(inplace=True)
+        df = df.rename(columns={'video_id': 'photo_id',
+                                'click_rate': 'click_rate0',
+                                'play_rate': 'play_rate0',
+                                'new_pctr': 'new_pctr0'})
 
         return df
 
+    @staticmethod
+    def get_died_info_data_from_kwai():
+        REPORT_THRESHOLD = 10
+        REDUCE_SIMILAR_THRESHOLD = 10
+        PLAY_THRESHOLD = 10
+        SHOW_THRESHOLD = 10
+
+        df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
+        df["photo_id"] = df["video_id"]
+        df["timelevel"] = df["date"]
+        df["tag"] = df["video_tag_id"].astype(str) + "-" + df["video_tag_name"]
+        df["riskFlag"] = (df["report_cnt"] + df["reduce_similar_cnt"]).astype(float)
+        df["risk"] = -df["riskFlag"]
+        df["died"] = ((df["visible_status"] == 'public') |
+                      (df["report_cnt"] > REPORT_THRESHOLD) |
+                      (df["reduce_similar_cnt"] > REDUCE_SIMILAR_THRESHOLD) |
+                      ((df["play_cnt"] == PLAY_THRESHOLD) & (df["show_cnt"] == SHOW_THRESHOLD))
+                      ).astype(int)
+        df = df[["photo_id", "timelevel", "tag", "riskFlag", "risk", "died"]]
+
+
+        return df[["photo_id", "timelevel", "tag", "riskFlag", "risk", "died"]]
+
     def load_data(self,args):
         # self.filtered_data()
-        df = self.get_kwai_data_to_cox()
         self.diedInfo=pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
-        if self.mock_data < 0:
-            df_train=self.coxData
+        if self.mock_data == 0:
+            df_train = self.get_kwai_data_to_cox()
+            self.diedInfo = self.get_died_info_data_from_kwai()
         else:
             df_train = self.get_mock_data()
         df_train.fillna(-1,inplace=True)
@@ -161,7 +184,6 @@ class coxDataLoader:
 
     def preprocess(self,args):
         df_train,df_val,df_test,cared=self.load_data(args)
-        print(len(df_train),len(df_val),len(df_test))
         ignore_length=3
         cols_standardize = cared[ignore_length:]
         # cols_leave = ['photo_id']
