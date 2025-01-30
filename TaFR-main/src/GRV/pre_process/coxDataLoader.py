@@ -110,26 +110,27 @@ class coxDataLoader:
 
     @staticmethod
     def get_died_info_data_from_kwai():
-        REPORT_THRESHOLD = 10
-        REDUCE_SIMILAR_THRESHOLD = 10
-        PLAY_THRESHOLD = 10
-        SHOW_THRESHOLD = 10
-
         df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
         df["photo_id"] = df["video_id"]
         df["timelevel"] = df["date"]
-        df["tag"] = df["video_tag_id"].astype(str) + "-" + df["video_tag_name"]
+        df["tag"] = df["video_tag_id"].astype(str)
         df["riskFlag"] = (df["report_cnt"] + df["reduce_similar_cnt"]).astype(float)
         df["risk"] = -df["riskFlag"]
-        df["died"] = ((df["visible_status"] == 'public') |
-                      (df["report_cnt"] > REPORT_THRESHOLD) |
-                      (df["reduce_similar_cnt"] > REDUCE_SIMILAR_THRESHOLD) |
-                      ((df["play_cnt"] == PLAY_THRESHOLD) & (df["show_cnt"] == SHOW_THRESHOLD))
-                      ).astype(int)
+
+        df["original_show_cnt"] = df.groupby("photo_id")["show_cnt"].transform("first")
+
+        df["decrease_percent"] = (df["original_show_cnt"] - df["show_cnt"]) / df["original_show_cnt"]
+
+        df["died"] = (
+                (df["visible_status"] != 'public') |
+                (df["decrease_percent"] >= 0.8)
+        ).astype(int)
+
+        df = df.groupby("photo_id").head(7)
+
         df = df[["photo_id", "timelevel", "tag", "riskFlag", "risk", "died"]]
 
-
-        return df[["photo_id", "timelevel", "tag", "riskFlag", "risk", "died"]]
+        return df[df["died"] == 1].drop_duplicates(subset=["photo_id"])
 
     def load_data(self,args):
         # self.filtered_data()
@@ -192,6 +193,8 @@ class coxDataLoader:
         # leave = [(col, None) for col in cols_leave]
         x_mapper = DataFrameMapper(standardize)#+leave
 
+        df_train.replace([np.inf, -np.inf], np.nan, inplace=True)
+        df_train.fillna(-1, inplace=True)
         self.x_train = x_mapper.fit_transform(df_train).astype('float32')
         if len(df_val)>0:
             x_val = x_mapper.transform(df_val).astype('float32')
