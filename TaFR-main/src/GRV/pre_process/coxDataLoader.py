@@ -89,7 +89,8 @@ class coxDataLoader:
 
     @staticmethod
     def get_kwai_data_to_cox():
-        df = pd.read_csv(r"/Users/cfuss/dev/uni/EXDDS/edds_ex2/data/KuaiRec/KuaiRec 2.0/data/item_daily_features.csv")
+        df = pd.read_csv(r"C:\DS\repos\edds_ex2\data\KuaiRec\KuaiRec 2.0\data\item_daily_features.csv")
+        #df = pd.read_csv(r"/Users/cfuss/dev/uni/EXDDS/edds_ex2/data/KuaiRec/KuaiRec 2.0/data/item_daily_features.csv")
 
         df['click_rate'] = df['like_cnt'] / df['show_cnt']
         df['exp'] = df['show_cnt']
