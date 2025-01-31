@@ -106,20 +106,43 @@ class COX:
         utils.check_dir(self.prediction_path+'.csv')
         self.prediction_results.to_csv(self.prediction_path+'.csv')
         return
-    
+
+    @staticmethod
+    def integrated_brier_score_fixed(ev, time_grid):
+        scores = ev.brier_score(time_grid)
+        return np.trapz(scores, time_grid)
+
+
+    @staticmethod
+    def integrated_nbll_fixed(ev, time_grid):
+        scores = ev.nbll(time_grid)
+        return np.trapz(scores, time_grid)
+
     def evaluate(self):
-        # self.surv.iloc[:, 10:20].plot()
-        # plt.ylabel('S(t | x)')
-        # _ = plt.xlabel('Time')
-        # plt.savefig(self.prediction_path+"_v0.png")
-        # plt.close()
+        self.surv.iloc[:, 10:20].plot()
+        plt.ylabel('S(t | x)')
+        _ = plt.xlabel('Time')
+        plt.savefig(self.prediction_path+"_v0.png")
+        plt.close()
 
         ev = EvalSurv(self.surv, self.corpus.durations_test, self.corpus.events_test, censor_surv='km')
         logging.info('ev.concordance_td: %f'%ev.concordance_td())
         print(ev.concordance_td())
         
         time_grid = np.linspace(self.corpus.durations_test.min(), self.corpus.durations_test.max(), 100)
-        
+
+        concordance = ev.concordance_td()
+        ibs = self.integrated_brier_score_fixed(ev, time_grid)
+        nbll = self.integrated_nbll_fixed(ev, time_grid)
+
+        logging.info(f'Concordance index: {concordance:.4f}')
+        logging.info(f'Integrated Brier Score: {ibs:.4f}')
+        logging.info(f'Integrated NBLL: {nbll:.4f}')
+
+        print(f'Concordance index: {concordance:.4f}')
+        print(f'Integrated Brier Score: {ibs:.4f}')
+        print(f'Integrated NBLL: {nbll:.4f}')
+
         # logging.info("integrated_brier_score: %f"%ev.integrated_brier_score(time_grid))
         # print(ev.integrated_brier_score(time_grid))
         # logging.info("ev.integrated_nbll: %f"%ev.integrated_nbll(time_grid))
@@ -129,8 +152,8 @@ class COX:
         # plt.xlim(0,300)
         # plt.title("Brier Score")
         # plt.savefig(self.prediction_path+"_v1.png")
-        print("[evaluation] BS saved")
-        # plt.show()
+        # print("[evaluation] BS saved")
+        # # plt.show()
 
     def analysis(self,label,args):
         print(len(self.prediction_results))
