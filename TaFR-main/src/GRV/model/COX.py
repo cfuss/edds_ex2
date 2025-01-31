@@ -4,7 +4,7 @@ import logging
 
 
 import torch
-from utils import utils
+from my_utils import utils
 import os
 
 from pycox.models import CoxTime
@@ -211,16 +211,16 @@ class COX:
         hourData=label.read_all(args)  # fix
         hourData['click']=hourData['click_rate']
 
+        #fix for col counter - get col from corpus and add to hourdata
+        hourData = hourData.merge(self.corpus.coxData[['photo_id', 'exp0']], on='photo_id', how='left')
+        hourData.rename(columns={'exp0': 'counter'}, inplace=True)
+
         itemInfo=hourData[(hourData['timelevel']>=startTime)&(hourData['timelevel']<endTime)].groupby('photo_id'). \
-            agg({'click':'sum','play_rate':'mean','click_rate':'mean', 'timelevel':'mean'})
-        itemInfo['ctr']=itemInfo['click'] # fix
+            agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean', 'timelevel':'mean'})
+        itemInfo['ctr']=itemInfo['click']/itemInfo['counter']# fix
 
-        # itemInfo=hourData[(hourData['timelevel']>=startTime)&(hourData['timelevel']<endTime)].groupby('photo_id'). \
-        #     agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
-        # itemInfo['ctr']=itemInfo['click']/itemInfo['counter']
-
-        # baseline=hourData[(hourData['timelevel']<startTime)].groupby('photo_id'). \
-            # agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
+       # baseline=hourData[(hourData['timelevel']<startTime)].groupby('photo_id'). \
+       #      agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
 
         def getRank(g):
             return pd.DataFrame((1 + np.lexsort((g['play_rate'].rank(), \
