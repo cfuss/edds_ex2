@@ -148,11 +148,11 @@ class COX:
         # logging.info("ev.integrated_nbll: %f"%ev.integrated_nbll(time_grid))
         # print(ev.integrated_nbll(time_grid))
         # _ = ev.brier_score(time_grid).plot()
-        # plt.ylim(0,0.25)
-        # plt.xlim(0,300)
-        # plt.title("Brier Score")
-        # plt.savefig(self.prediction_path+"_v1.png")
-        # print("[evaluation] BS saved")
+        plt.ylim(0,0.25)
+        plt.xlim(0,300)
+        plt.title("Brier Score")
+        plt.savefig(self.prediction_path+"_v1.png")
+        print("[evaluation] BS saved")
         # # plt.show()
 
     def analysis(self,label,args):
@@ -163,7 +163,7 @@ class COX:
         timeList=df.columns.tolist()
         df['SA_score']=0
         startTime=24
-        endTime=24+12
+        endTime=24+100
         GROUP=10
         # print("******[analysis]******")
         # print(startTime,endTime,GROUP)
@@ -208,12 +208,16 @@ class COX:
         print(df['SA_group'].value_counts())
 
         
-        hourData=label.read_all(args)
-        hourData['click']=hourData['click_rate']*hourData['counter']
+        hourData=label.read_all(args)  # fix
+        hourData['click']=hourData['click_rate']
 
         itemInfo=hourData[(hourData['timelevel']>=startTime)&(hourData['timelevel']<endTime)].groupby('photo_id'). \
-            agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
-        itemInfo['ctr']=itemInfo['click']/itemInfo['counter']
+            agg({'click':'sum','play_rate':'mean','click_rate':'mean', 'timelevel':'mean'})
+        itemInfo['ctr']=itemInfo['click'] # fix
+
+        # itemInfo=hourData[(hourData['timelevel']>=startTime)&(hourData['timelevel']<endTime)].groupby('photo_id'). \
+        #     agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
+        # itemInfo['ctr']=itemInfo['click']/itemInfo['counter']
 
         # baseline=hourData[(hourData['timelevel']<startTime)].groupby('photo_id'). \
             # agg({'click':'sum','counter':'sum','play_rate':'mean','click_rate':'mean'})
@@ -223,17 +227,13 @@ class COX:
             g['ctr'].rank())))/len(g), \
             index=g.index)
         # itemInfo['timelevel']=48
-        itemInfo['per_rank']=itemInfo.groupby('timelevel').apply(getRank)
+        itemInfo['per_rank']=itemInfo.groupby('timelevel').apply(getRank).reset_index(level=0, drop=True)
         per_min=itemInfo['per_rank'].min()
         itemInfo['per_rank']=itemInfo['per_rank']-per_min
 
         print(len(itemInfo),len(df))
         itemInfo=pd.merge(itemInfo,df,on='photo_id',suffixes=['_itemInfo',''],how='right') #,how='right'
         itemInfo.fillna(0,inplace=True)
-
-        itemInfo['per_rank']=itemInfo.groupby('timelevel').apply(getRank)
-        per_min=itemInfo['per_rank'].min()
-        itemInfo['per_rank']=itemInfo['per_rank']-per_min
 
         print(len(itemInfo)) # (48-12 ~ 48+12) 10546; 55202 12229
 

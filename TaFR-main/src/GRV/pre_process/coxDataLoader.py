@@ -62,6 +62,7 @@ class coxDataLoader:
                 caredList.append('play_rate%d'%(i))
             if self.pctr:
                 caredList.append('new_pctr%d'%(i))
+            caredList.append(f'exp{i}')
         self.coxData=self.coxData[caredList]
 
     @staticmethod
@@ -105,7 +106,8 @@ class coxDataLoader:
         df = df.rename(columns={'video_id': 'photo_id',
                                 'click_rate': 'click_rate0',
                                 'play_rate': 'play_rate0',
-                                'new_pctr': 'new_pctr0'})
+                                'new_pctr': 'new_pctr0',
+                                'exp': 'exp0'})
 
         return df
 
@@ -139,7 +141,8 @@ class coxDataLoader:
         self.diedInfo = pd.read_csv(args.label_path + '\\kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
         # self.diedInfo = pd.read_csv(args.label_path + '/kwai_1115__1__24__168__0.5__0.5__-3.csv.csv')
         if self.mock_data == 0:
-            df_train = self.get_kwai_data_to_cox()
+            self.coxData = self.get_kwai_data_to_cox()
+            df_train = self.coxData
             self.diedInfo = self.get_died_info_data_from_kwai()
         else:
             df_train = self.get_mock_data()

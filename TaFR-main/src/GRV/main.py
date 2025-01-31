@@ -33,7 +33,7 @@ def parse_global_args(parser):
                             help='load trained model or not')
     parser.add_argument('--train', type=int, default=1,
                             help='To train the model or not.')
-    parser.add_argument('--analysis', type=int, default=0,
+    parser.add_argument('--analysis', type=int, default=1,
                             help='analysis prediction results')
     return parser
 
