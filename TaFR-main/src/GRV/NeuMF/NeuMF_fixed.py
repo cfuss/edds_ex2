@@ -13,9 +13,9 @@ import argparse
 #################### Arguments ####################
 def parse_args():
     parser = argparse.ArgumentParser(description="Run NeuMF.")
-    parser.add_argument('--path', nargs='?', default='Data/',
+    parser.add_argument('--path', nargs='?', default='/data/',
                         help='Input data path.')
-    parser.add_argument('--dataset', nargs='?', default='ml-1m',
+    parser.add_argument('--dataset', nargs='?', default='surv.csv',
                         help='Choose a dataset.')
     parser.add_argument('--epochs', type=int, default=100,
                         help='Number of epochs.')
@@ -158,7 +158,7 @@ if __name__ == '__main__':
 
     # Loading data
     t1 = time()
-    dataset = KwaiDataset(args.path + args.dataset)
+    dataset = KwaiDataset(r'C:\DS\repos\edds_ex2\TaFR-main\src\GRV\NeuMF\data\surv.csv')
     train, testRatings, testNegatives = dataset.trainMatrix, dataset.testRatings, dataset.testNegatives
     num_users, num_items = train.shape
     print("Load data done [%.1f s]. #user=%d, #item=%d, #train=%d, #test=%d"

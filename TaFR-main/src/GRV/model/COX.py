@@ -262,4 +262,4 @@ class COX:
         x=itemInfo['per_rank'].corr(itemInfo['base_rank'],method='pearson')
         print(x)
 
-        itemInfo.to_csv('data/kwai_1115/surv.csv')
+        itemInfo.to_csv('NeuMF/data/surv.csv')
