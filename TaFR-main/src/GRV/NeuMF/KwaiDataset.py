@@ -12,6 +12,8 @@ class KwaiDataset:
     def load_data(self):
         df = pd.read_csv(self.data_path)
 
+        df = df.iloc[:10, :]
+
         date_columns = [col for col in df.columns if col.isdigit()]
         df['SA_score'] = df[date_columns].sum(axis=1)
 
