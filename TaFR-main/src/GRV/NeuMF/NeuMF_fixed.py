@@ -1,4 +1,5 @@
 import numpy as np
+import tensorflow as tf
 from tensorflow.keras.regularizers import l2
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Embedding, Input, Dense, Concatenate, Flatten, Multiply
@@ -10,6 +11,18 @@ import GMF, MLP
 import argparse
 
 
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+    try:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)  # Prevent memory allocation issues
+        print("GPU is being used")
+    except RuntimeError as e:
+        print(e)
+else:
+    print("No GPU found. Running on CPU.")
+
+
 #################### Arguments ####################
 def parse_args():
     parser = argparse.ArgumentParser(description="Run NeuMF.")
@@ -17,7 +30,7 @@ def parse_args():
                         help='Input data path.')
     parser.add_argument('--dataset', nargs='?', default='surv.csv',
                         help='Choose a dataset.')
-    parser.add_argument('--epochs', type=int, default=100,
+    parser.add_argument('--epochs', type=int, default=5,
                         help='Number of epochs.')
     parser.add_argument('--batch_size', type=int, default=256,
                         help='Batch size.')
@@ -117,22 +130,25 @@ def load_pretrain_model(model, gmf_model, mlp_model, num_layers):
     return model
 
 
-def get_train_instances(train, num_negatives):
+def get_train_instances(train, num_negatives, num_items):
     user_input, item_input, labels = [], [], []
-    num_users = train.shape[0]
-    for (u, i) in train.keys():
-        # positive instance
+
+    train = train.tocsr()
+    users, items = train.nonzero()
+
+    for u, i in zip(users, items):
         user_input.append(u)
         item_input.append(i)
         labels.append(1)
-        # negative instances
-        for t in range(num_negatives):
+
+        for _ in range(num_negatives):
             j = np.random.randint(num_items)
-            while (u, j) in train.keys():
+            while train[u, j] != 0:
                 j = np.random.randint(num_items)
             user_input.append(u)
             item_input.append(j)
             labels.append(0)
+
     return user_input, item_input, labels
 
 
@@ -156,7 +172,6 @@ if __name__ == '__main__':
     print("NeuMF arguments: %s " % (args))
     model_out_file = 'Pretrain/%s_NeuMF_%d_%s_%d.weights.h5' % (args.dataset, mf_dim, args.layers, time())
 
-    # Loading data
     t1 = time()
     dataset = KwaiDataset(r'C:\DS\repos\edds_ex2\TaFR-main\src\GRV\NeuMF\data\surv.csv')
     train, testRatings, testNegatives = dataset.trainMatrix, dataset.testRatings, dataset.testNegatives
@@ -164,7 +179,6 @@ if __name__ == '__main__':
     print("Load data done [%.1f s]. #user=%d, #item=%d, #train=%d, #test=%d"
           % (time() - t1, num_users, num_items, train.nnz, len(testRatings)))
 
-    # Build model
     model = get_model(num_users, num_items, mf_dim, layers, reg_layers, reg_mf)
     if learner.lower() == "adagrad":
         model.compile(optimizer=Adagrad(learning_rate=learning_rate), loss='binary_crossentropy')
@@ -175,7 +189,6 @@ if __name__ == '__main__':
     else:
         model.compile(optimizer=SGD(learning_rate=learning_rate), loss='binary_crossentropy')
 
-    # Load pretrain model
     if mf_pretrain != '' and mlp_pretrain != '':
         gmf_model = GMF.get_model(num_users, num_items, mf_dim)
         gmf_model.load_weights(mf_pretrain)
@@ -184,7 +197,6 @@ if __name__ == '__main__':
         model = load_pretrain_model(model, gmf_model, mlp_model, len(layers))
         print("Load pretrained GMF (%s) and MLP (%s) models done. " % (mf_pretrain, mlp_pretrain))
 
-    # Init performance
     (hits, ndcgs) = evaluate_model(model, testRatings, testNegatives, topK, evaluation_threads)
     hr, ndcg = np.array(hits).mean(), np.array(ndcgs).mean()
     print('Init: HR = %.4f, NDCG = %.4f' % (hr, ndcg))
@@ -192,19 +204,15 @@ if __name__ == '__main__':
     if args.out > 0:
         model.save_weights(model_out_file, overwrite=True)
 
-    # Training model
     for epoch in range(num_epochs):
         t1 = time()
-        # Generate training instances
-        user_input, item_input, labels = get_train_instances(train, num_negatives)
+        user_input, item_input, labels = get_train_instances(train.tocoo(), num_negatives, num_items)
 
-        # Training
         hist = model.fit([np.array(user_input), np.array(item_input)],  # input
                          np.array(labels),  # labels
                          batch_size=batch_size, epochs=1, verbose=1, shuffle=True)
         t2 = time()
 
-        # Evaluation
         if epoch % verbose == 0:
             (hits, ndcgs) = evaluate_model(model, testRatings, testNegatives, topK, evaluation_threads)
             hr, ndcg, loss = np.array(hits).mean(), np.array(ndcgs).mean(), hist.history['loss'][0]
