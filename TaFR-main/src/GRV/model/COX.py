@@ -4,7 +4,7 @@ import logging
 
 
 import torch
-from my_utils import utils
+from utils import utils
 import os
 
 from pycox.models import CoxTime
@@ -262,5 +262,4 @@ class COX:
         x=itemInfo['per_rank'].corr(itemInfo['base_rank'],method='pearson')
         print(x)
 
-
-
+        itemInfo.to_csv('data/kwai_1115/surv.csv')

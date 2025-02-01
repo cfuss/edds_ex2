@@ -3983,3 +3983,1813 @@ INFO:root:Integrated NBLL: 81.4587
 INFO:root:******[analysis]******
 INFO:root:
 --------------------------------------------- END: 2025-01-31 14:30:01 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 11:41:04 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.001999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.00112 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.001096 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.001006 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.001001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.001121 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.00101 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.000998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0011 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.001097 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.001006 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.001112 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.000995 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x00000190F6C8EAB0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:
+--------------------------------------------- END: 2025-02-01 11:41:25 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 11:47:09 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015631 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.015624 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.015626 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.015625 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.015624 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.015626 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x00000190E733BCB0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 11:55:19 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015635 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.015619 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.015624 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x0000022F69C27230>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:06:21 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015617 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.015629 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.015626 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.015618 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x0000014456082210>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:17:28 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015621 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.015628 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.015621 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.015623 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.015621 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.015621 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.015627 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001C3326E9310>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:23:16 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.015624 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.015626 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.015614 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.015623 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.015618 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x00000168673AC9B0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:31:24 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015624 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.015626 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.015623 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.015623 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001621701B2C0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:34:53 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015619 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.002996 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.015639 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.015628 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.015627 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.015625 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001E883C9DE50>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:
+--------------------------------------------- END: 2025-02-01 12:36:50 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 12:46:08 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.017998 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.001003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.001003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.001001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.001006 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.001117 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.000997 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.001003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.001097 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.001001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 9e-05 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.000997 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.001006 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.001003 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.000995 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.00037 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.000996 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.001005 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.000104 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001FD28501AC0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:
+--------------------------------------------- END: 2025-02-01 12:46:30 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 15:20:23 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.019309 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.001011 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.000994 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.000995 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.001153 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.001003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.001002 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.002122 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.001001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.000994 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.001077 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.001003 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.001001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.001018 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.000991 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.001001 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.000999 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.001009 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.000997 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.000992 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.000992 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.001 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.001004 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.001013 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.001002 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.000998 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.000999 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.001006 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 5e-05 secs
+INFO:root:<model.COX.COX object at 0x000001F23DA18DD0>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:
+--------------------------------------------- END: 2025-02-01 15:20:47 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 15:22:04 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.078134 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.015644 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.015633 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.015626 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.006516 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.015648 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.015628 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.015625 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001C3036E9280>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 17:59:18 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.015618 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.015633 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.006528 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.015625 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.015624 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.002063 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.015629 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.015629 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.015623 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001B2192A3530>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:
+--------------------------------------------- END: 2025-02-01 18:00:40 ---------------------------------------------
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 18:02:13 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.031249 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.015624 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.006525 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.015651 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.015623 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.015624 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.015625 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x000001D25938B140>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******
+INFO:root:Namespace(model_name='COX')
+INFO:root:--------------------------------------------- BEGIN: 2025-02-01 18:03:57 ---------------------------------------------
+INFO:root:
+===========================================
+ Arguments          | Values               
+===========================================
+ EXP_hazard         | 0.5                 
+ acc_thres          | -3                  
+ agg_hour           | 1                   
+ analysis           | 1                   
+ dataset            | kwai_1115           
+ emb_size           | 64                  
+ end_time           | 168                 
+ exposed_duration   | 0                   
+ gpu                | 0                   
+ label_path         | ../GRV/label        
+ load               | 0                   
+ mock_data          | 0                   
+ noEXP_hazard       | 0.5                 
+ pctr               | 0                   
+ play_rate          | 1                   
+ prediction_dataset |                     
+ prediction_path    | ../prediction/COX...
+ prepareLabel       | 0                   
+ random_seed        | 1234                
+ start_time         | 14                  
+ train              | 1                   
+===========================================
+INFO:root:GPU available: False
+INFO:root:[coxDataLoader] before died filter 5566 items
+INFO:root:         died     timelevel
+count  5566.0  5.566000e+03
+mean      1.0  2.020080e+07
+std       0.0  6.637610e+01
+min       1.0  2.020070e+07
+25%       1.0  2.020071e+07
+50%       1.0  2.020081e+07
+75%       1.0  2.020083e+07
+max       1.0  2.020090e+07
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate0']: 0.01562 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate1']: 0.015627 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate5']: 0.015628 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate7']: 0.015621 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate8']: 0.006519 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[FIT_TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.015627 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate0']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate1']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate2']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate3']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate4']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate5']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate6']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate7']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate8']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate9']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate10']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate11']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate12']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['click_rate13']: 0.0 secs
+INFO:sklearn_pandas:[TRANSFORM] ['play_rate13']: 0.0 secs
+INFO:root:<model.COX.COX object at 0x0000017C6C491D90>
+INFO:root:ev.concordance_td: 0.703399
+INFO:root:Concordance index: 0.7034
+INFO:root:Integrated Brier Score: 26.6854
+INFO:root:Integrated NBLL: 81.4587
+INFO:root:******[analysis]******

@@ -70,7 +70,7 @@ def main():
     if args.train>0:
         model.evaluate()
     if args.analysis==1:
-        model.analysis(label,args)
+        items_data = model.analysis(label,args)
     
     
     logging.info(os.linesep + '-' * 45 + ' END: ' + utils.get_time() + ' ' + '-' * 45)

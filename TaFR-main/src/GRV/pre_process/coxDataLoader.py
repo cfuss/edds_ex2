@@ -35,7 +35,7 @@ class coxDataLoader:
 
     def __init__(self, args):
         dataFolder=args.path+args.dataset
-        print(os.path.abspath(dataFolder))
+        self.data_folder = dataFolder
         self.coxData=pd.read_csv("%s/cox.csv"%dataFolder)
         renameDict={'item_id':'photo_id'}
         for i in range(168):
@@ -108,6 +108,8 @@ class coxDataLoader:
                                 'play_rate': 'play_rate0',
                                 'new_pctr': 'new_pctr0',
                                 'exp': 'exp0'})
+
+        df = df.groupby("photo_id").head(7)
 
         return df
 
