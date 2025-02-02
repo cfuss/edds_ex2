@@ -1,0 +1,42 @@
+{
+    "experiment_name": "Reproduction of  the Measuring Item Global Residual Value for Fair Recommendation paper",
+    "authors": "Christian Fuss, Afshan Iqbal, Julia Kraus, Muhammad Mohsin Yasin, Gabor Zeke",
+    "matriculation_numbers": "09226289, 12409757, 01327036, 12345037, 12427550",
+    "date": "2025-02-02",
+    "dataset": {
+        "name": "surv.csv",
+        "num_users": 10000,
+        "num_items": 5000,
+        "num_train_interactions": 100000,
+        "num_test_interactions": 5000
+    },
+    "GRV_model": {
+        "name": "TaFR-main/src/GRV/NeuMF",
+        "embedding_size": 64,
+        "gpu": 0,
+        "output": "surv.csv"
+    },
+    "backbone_model": {
+        "name": "TaFR-main/src/GRV/NeuMF",
+        "mf_dim": 8,
+        "layers": [64, 32, 16, 8],
+        "gpu": 1,
+        "regularization": {
+            "mf": 0.01,
+            "layers": [0, 0, 0, 0]
+        }
+    },
+    "training": {
+        "epochs": 5,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "optimizer": "adam",
+        "num_neg_samples": 4
+    },
+    "results": {
+        "best_epoch": 4,
+        "HR": 1.0000,
+        "NDCG": 0.7078,
+        "final_loss": 0.2456
+    }
+}
